@@ -14,10 +14,11 @@ class AthletesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     
-    let athleteArray: [ActressModel] = load("ActressData.json")
+   // let athleteArray: [ActressModel] = load("ActressData.json")
+    
         let names = ["BrandiMae Akers", "Judy Booty", "Lisa Lips", "Betty Butt", "Lucy Lavender", "Greta Green", "Louise Lazy", "Suzie Samson"]
     
-    let nameInfo = [
+   // let nameInfo = [
        
 
     override func viewDidLoad() {

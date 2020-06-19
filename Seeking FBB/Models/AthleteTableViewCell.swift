@@ -16,8 +16,6 @@ class AthleteTableViewCell: UITableViewCell {
     var infoLbl: UILabel!
     
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         

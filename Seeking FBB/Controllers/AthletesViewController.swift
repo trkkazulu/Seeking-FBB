@@ -44,7 +44,7 @@ extension AthletesViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.lbl.text = names[indexPath.row]
         cell?.img.image = UIImage(named:names[indexPath.row])
         cell?.img.image = cell?.img.image?.circleMask
-        cell?.infoLbl.text = names[indexPath.row]
+       // cell?.infoLbl.text = "This will be the info lable text"
         return cell!
     }
     
@@ -53,6 +53,7 @@ extension AthletesViewController: UITableViewDelegate, UITableViewDataSource {
         
         vc?.image = UIImage(named:names[indexPath.row])!
         vc?.name = names[indexPath.row]
+        vc?.info = "This is the info passed from AthletesViewController"
         
         self.navigationController?.pushViewController(vc!, animated: true)
 

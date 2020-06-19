@@ -1,0 +1,75 @@
+
+[
+    {
+        "name": "BrandiMae Akers",
+        "dateOfBirth": "4 June 1982",
+        "city": "Los Angeles",
+        "state": "California",
+        "id": 1001,
+        "imageName": "BrandiMae Akers",
+        "isFavorite": false
+    },
+    {
+        "name": "Judy Booty",
+        "dateOfBirth": "6 November 1988",
+        "city": " Scottsdale",
+        "state": "Arizona",
+        "id": 1002,
+        "imageName": "Judy Booty",
+        "isFavorite": false
+    },
+    {
+        "name": "Lisa Lips",
+        "dateOfBirth": "16 May 1986",
+        "city": "Oak Ridge",
+        "state": "Tennessee",
+        "id": 1003,
+        "imageName": "Lisa Lips",
+        "isFavorite": true
+    },
+    {
+        "name": "Betty Butt",
+        "dateOfBirth": "28 April 1981",
+        "city": "Pomona",
+        "state": "California",
+        "id": 1004,
+        "imageName": "Jessica Alba",
+        "isFavorite": false
+    },
+    {
+        "name": "Lucy Lavender",
+        "dateOfBirth": "22 November 1984",
+        "city": "Manhattan",
+        "state": "New York",
+        "id": 1014,
+        "imageName": "Lucy Lavender",
+        "isFavorite": false
+    },
+    {
+        "name": "Greta Green",
+        "dateOfBirth": "7 March 1970",
+        "city": "Westminster",
+        "state": "London",
+        "id": 1005,
+        "imageName": "Greta Green",
+        "isFavorite": true
+    },
+    {
+        "name": "Louise Lazy",
+        "dateOfBirth": "12 April 1994",
+        "city": "The Bronx",
+        "state": "New York",
+        "id": 1007,
+        "imageName": "Louise Lazy",
+        "isFavorite": false
+    },
+    {
+        "name": "Suzi Samson",
+        "dateOfBirth": "24 July 1969",
+        "city": "Castle Hill",
+        "state": "New York",
+        "id": 1008,
+        "imageName": "Suzi Samson",
+        "isFavorite": false
+    }
+]

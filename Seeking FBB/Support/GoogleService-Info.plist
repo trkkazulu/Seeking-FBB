@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>530173391759-445rlkhj0jie6qoc9v3i0p6l3ueuh80h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.530173391759-445rlkhj0jie6qoc9v3i0p6l3ueuh80h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB1ChzQ_8HT8bZ0QSQfu8rkpJcXWGH8kqQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>530173391759</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.glathocom.Seeking-FBB</string>
+	<key>PROJECT_ID</key>
+	<string>seekingfbb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>seekingfbb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:530173391759:ios:e9420d2d95f60b6cec51fa</string>
+	<key>DATABASE_URL</key>
+	<string>https://seekingfbb.firebaseio.com</string>
+</dict>
+</plist>

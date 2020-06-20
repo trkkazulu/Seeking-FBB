@@ -18,14 +18,18 @@ class AthletesViewController: UIViewController {
     
         let names = ["BrandiMae Akers", "Judy Booty", "Lisa Lips", "Betty Butt", "Lucy Lavender", "Greta Green", "Louise Lazy", "Suzie Samson"]
     
-    let infoDetail = ["0","2", "3", "4", "5", "6", "7", "8"]
+    let infoDetail = ["Self Created • Motivated | #entrepreneur | Producer \n • Fitness Model \n • Provocative Entertainer \n • Female Bodybuilder| FBBDATE.com ","Rooty tooty, fine and cuty, lifts weights for her duty", "Someone special this way comes. Be sure to keep her from your chums.", "Daring darling loves to date. Be on time don't make her wait.", "5", "6", "7", "8"]
+    
+     
+    
+    
     
    // let nameInfo = [
        
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
     }
     
 }
@@ -56,8 +60,7 @@ extension AthletesViewController: UITableViewDelegate, UITableViewDataSource {
         vc?.image = UIImage(named:names[indexPath.row])!
         vc?.name = names[indexPath.row]
         vc?.infoDetail = infoDetail[indexPath.row]
-
-        
+ 
         self.navigationController?.pushViewController(vc!, animated: true)
 
        // performSegue(withIdentifier: "DetailView", sender: nil)
@@ -85,3 +88,6 @@ extension UIImage {
         return UIGraphicsGetImageFromCurrentImageContext()
     }
 }
+
+
+

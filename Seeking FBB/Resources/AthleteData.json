@@ -1,4 +1,6 @@
-    {
+[
+
+{
         "name": "BrandiMae Akers",
         "dateOfBirth": "4 June 1982",
         "city": "Los Angeles",
@@ -70,3 +72,5 @@
         "imageName": "Suzi Samson",
         "isFavorite": false
     }
+    
+    ]

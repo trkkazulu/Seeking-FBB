@@ -23,6 +23,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //let athleteArray: [AthleteModel] = load("AthleteData.json")
+        
         //var athData: Data!
         
         //let jsonData: Data = athArray
@@ -31,7 +33,8 @@ class DetailViewController: UIViewController {
         lbl.text = name
         img.image = image
         infoLbl.text = infoDetail
-       
+        
+       //print(athleteArray)
         
        // athData = readLocalFile(forName: "data")
         

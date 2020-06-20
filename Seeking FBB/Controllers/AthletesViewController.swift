@@ -18,6 +18,8 @@ class AthletesViewController: UIViewController {
     
         let names = ["BrandiMae Akers", "Judy Booty", "Lisa Lips", "Betty Butt", "Lucy Lavender", "Greta Green", "Louise Lazy", "Suzie Samson"]
     
+    let infoDetail = ["0","2", "3", "4", "5", "6", "7", "8"]
+    
    // let nameInfo = [
        
 
@@ -44,7 +46,7 @@ extension AthletesViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.lbl.text = names[indexPath.row]
         cell?.img.image = UIImage(named:names[indexPath.row])
         cell?.img.image = cell?.img.image?.circleMask
-       // cell?.infoLbl.text = "This will be the info lable text"
+       
         return cell!
     }
     
@@ -53,7 +55,8 @@ extension AthletesViewController: UITableViewDelegate, UITableViewDataSource {
         
         vc?.image = UIImage(named:names[indexPath.row])!
         vc?.name = names[indexPath.row]
-        vc?.info = "This is the info passed from AthletesViewController"
+        vc?.infoDetail = infoDetail[indexPath.row]
+
         
         self.navigationController?.pushViewController(vc!, animated: true)
 

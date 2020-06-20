@@ -9,14 +9,14 @@
 import Foundation
 import SwiftUI
 
-struct AthleteModel: Codable, Hashable, Identifiable {
-    var id: Int
-    var name: String
-    var dateOfBirth: String
-    var state: String
-    var city: String
-    var imageName: String
-    var isFavorite: Bool
+struct AthleteModel: Codable { //, Hashable, Identifiable {
+    let id: Int
+    let name: String
+    let dateOfBirth: String
+    let state: String
+    let city: String
+    let imageName: String
+    let isFavorite: Bool
 }
 
 extension AthleteModel {

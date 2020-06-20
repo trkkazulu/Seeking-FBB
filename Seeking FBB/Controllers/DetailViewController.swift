@@ -11,33 +11,42 @@ import UIKit
 class DetailViewController: UIViewController {
     
     
+
     @IBOutlet weak var infoLbl: UILabel!
     @IBOutlet weak var lbl: UILabel!
     @IBOutlet weak var img: UIImageView!
     
     var image = UIImage()
     var name = String()
-    var info = String()
+    var infoDetail = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var athData: Data!
+        //var athData: Data!
         
         //let jsonData: Data = athArray
         //let jsonDict = try JSONSerialization.jsonObject(with: jsonData) as? NSDictionary
         
         lbl.text = name
         img.image = image
-        // infoLbl.text = print(athArray)
+        infoLbl.text = infoDetail
+       
         
-        athData = readLocalFile(forName: "AthleteData")
+       // athData = readLocalFile(forName: "data")
         
-        print(athData)
+        //info = print(athData)
+        //infoLbl.text = info
         
-       // parse(jasonData: athData)
+//        if let localData = self.readLocalFile(forName: "AthleteData") {
+//            self.parse(jsonData: localData)
+//        }
         
-  
+       
+        
+        
+        
+        
     }
     
     private func readLocalFile(forName name: String) -> Data? {
@@ -53,16 +62,21 @@ class DetailViewController: UIViewController {
         
         return nil
     }
-
     
-    func parse(jasonData: Data) {
+    
+    func parse(jsonData: Data) {
         do {
             let decodedData = try JSONDecoder().decode(AthleteModel.self,
-                                                       from: jasonData)
-            
+                                                       from: jsonData)
+            print("ID: ", decodedData.id)
             print("Name: ", decodedData.name)
             print("Date of Birth: ", decodedData.dateOfBirth)
+            print("State: ", decodedData.state)
+            print("City: ", decodedData.city)
+            print("Image Name: ", decodedData.imageName)
+            print("Is Favorite: ", decodedData.isFavorite)
             print("===================================")
+            
         } catch {
             print("decode error")
         }

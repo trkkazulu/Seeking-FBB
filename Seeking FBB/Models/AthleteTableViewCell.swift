@@ -13,7 +13,7 @@ class AthleteTableViewCell: UITableViewCell {
     @IBOutlet weak var lbl: UILabel!
     @IBOutlet weak var img: UIImageView!
     
-    var infoLbl: UILabel!
+
     
     
     override func awakeFromNib() {

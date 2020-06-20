@@ -25,6 +25,8 @@
 		13A197A62484380A00E614F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A197A42484380A00E614F4 /* Post.swift */; };
 		13A197A92484387F00E614F4 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A197A82484387F00E614F4 /* Comment.swift */; };
 		13A197B52484A62500E614F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A197B42484A62500E614F4 /* HomeViewController.swift */; };
+		13AC9747249E6F9D00FCED98 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC9746249E6F9D00FCED98 /* DemoData.swift */; };
+		13AC9749249E79E900FCED98 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 13AC9748249E79E900FCED98 /* data.json */; };
 		13B22B2C249D47B900D6AB05 /* AthleteData.json in Resources */ = {isa = PBXBuildFile; fileRef = 13B22B2B249D47B900D6AB05 /* AthleteData.json */; };
 		13B22B2E249D4A2300D6AB05 /* AthleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B22B2D249D4A2300D6AB05 /* AthleteModel.swift */; };
 		13B22B30249D4B8800D6AB05 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B22B2F249D4B8800D6AB05 /* Data.swift */; };
@@ -54,6 +56,8 @@
 		13A197A42484380A00E614F4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		13A197A82484387F00E614F4 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		13A197B42484A62500E614F4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		13AC9746249E6F9D00FCED98 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		13AC9748249E79E900FCED98 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		13B22B2B249D47B900D6AB05 /* AthleteData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AthleteData.json; sourceTree = "<group>"; };
 		13B22B2D249D4A2300D6AB05 /* AthleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteModel.swift; sourceTree = "<group>"; };
 		13B22B2F249D4B8800D6AB05 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 				13A197A82484387F00E614F4 /* Comment.swift */,
 				13A197A42484380A00E614F4 /* Post.swift */,
 				13B22B2D249D4A2300D6AB05 /* AthleteModel.swift */,
+				13AC9746249E6F9D00FCED98 /* DemoData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				13B22B2B249D47B900D6AB05 /* AthleteData.json */,
+				13AC9748249E79E900FCED98 /* data.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 			files = (
 				136E836524830B5100EAE41D /* LaunchScreen.storyboard in Resources */,
 				136E836D248317E000EAE41D /* GoogleService-Info.plist in Resources */,
+				13AC9749249E79E900FCED98 /* data.json in Resources */,
 				136E836224830B5100EAE41D /* Assets.xcassets in Resources */,
 				136E836024830B4900EAE41D /* Main.storyboard in Resources */,
 				13B22B2C249D47B900D6AB05 /* AthleteData.json in Resources */,
@@ -321,6 +328,7 @@
 				136E83732483237C00EAE41D /* UserProfile.swift in Sources */,
 				13B22B2E249D4A2300D6AB05 /* AthleteModel.swift in Sources */,
 				136E835924830B4900EAE41D /* AppDelegate.swift in Sources */,
+				13AC9747249E6F9D00FCED98 /* DemoData.swift in Sources */,
 				136E835B24830B4900EAE41D /* SceneDelegate.swift in Sources */,
 				13A197A92484387F00E614F4 /* Comment.swift in Sources */,
 				136E837124831EA800EAE41D /* SignUpViewController.swift in Sources */,

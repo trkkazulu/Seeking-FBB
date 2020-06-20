@@ -353,8 +353,8 @@
                                     <action selector="voteBtnPressed:" destination="GjL-Ur-cGB" eventType="touchUpInside" id="REO-Ai-yMs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF7-k3-rhn">
-                                <rect key="frame" x="16" y="514" width="326" height="140"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-Bg-Ngz">
+                                <rect key="frame" x="16" y="525" width="339" height="115"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -362,26 +362,26 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6ve-Bg-Ngz" firstAttribute="trailing" secondItem="cwR-MG-3PR" secondAttribute="trailing" id="671-zj-Rib"/>
                             <constraint firstItem="x8w-35-7Qu" firstAttribute="leading" secondItem="cwR-MG-3PR" secondAttribute="leading" id="Cew-9v-5bu"/>
                             <constraint firstItem="BEN-Wt-Bt3" firstAttribute="leading" secondItem="51e-Qh-BAO" secondAttribute="leading" constant="262" id="Deg-tz-Trc"/>
-                            <constraint firstItem="eF7-k3-rhn" firstAttribute="trailing" secondItem="BEN-Wt-Bt3" secondAttribute="trailing" id="UHv-zV-z3n"/>
+                            <constraint firstItem="6ve-Bg-Ngz" firstAttribute="leading" secondItem="Zde-Ki-E0I" secondAttribute="leadingMargin" id="LEX-WP-OcH"/>
+                            <constraint firstItem="51e-Qh-BAO" firstAttribute="bottom" secondItem="6ve-Bg-Ngz" secondAttribute="bottom" constant="27" id="PGc-am-oG2"/>
                             <constraint firstAttribute="bottom" secondItem="BEN-Wt-Bt3" secondAttribute="bottom" constant="161" id="XRf-t1-zZv"/>
                             <constraint firstItem="x8w-35-7Qu" firstAttribute="top" secondItem="51e-Qh-BAO" secondAttribute="top" id="Yal-vX-9eF"/>
+                            <constraint firstItem="6ve-Bg-Ngz" firstAttribute="top" secondItem="BEN-Wt-Bt3" secondAttribute="bottom" constant="19" id="Ziq-Ed-jQr"/>
                             <constraint firstItem="x8w-35-7Qu" firstAttribute="leading" secondItem="51e-Qh-BAO" secondAttribute="leading" constant="20" id="b6z-zG-70X"/>
                             <constraint firstItem="x8w-35-7Qu" firstAttribute="centerX" secondItem="Zde-Ki-E0I" secondAttribute="centerX" id="btN-tm-x4H"/>
                             <constraint firstItem="BEN-Wt-Bt3" firstAttribute="top" secondItem="cwR-MG-3PR" secondAttribute="bottom" constant="8" id="e5r-8f-PGa"/>
-                            <constraint firstItem="eF7-k3-rhn" firstAttribute="top" secondItem="BEN-Wt-Bt3" secondAttribute="bottom" constant="8" id="eXR-qJ-ljW"/>
                             <constraint firstItem="x8w-35-7Qu" firstAttribute="trailing" secondItem="cwR-MG-3PR" secondAttribute="trailing" id="l5G-Xz-Juu"/>
                             <constraint firstItem="cwR-MG-3PR" firstAttribute="top" secondItem="x8w-35-7Qu" secondAttribute="bottom" constant="18" id="mSq-Zw-8s1"/>
-                            <constraint firstItem="eF7-k3-rhn" firstAttribute="leading" secondItem="Zde-Ki-E0I" secondAttribute="leadingMargin" id="qgQ-Sn-Dki"/>
-                            <constraint firstItem="51e-Qh-BAO" firstAttribute="bottom" secondItem="eF7-k3-rhn" secondAttribute="bottom" constant="13" id="wVi-0j-duz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="51e-Qh-BAO"/>
                     </view>
                     <navigationItem key="navigationItem" id="SSB-Y6-aeH"/>
                     <connections>
                         <outlet property="img" destination="cwR-MG-3PR" id="Lrt-Og-alB"/>
-                        <outlet property="infoLbl" destination="eF7-k3-rhn" id="kEE-Ux-R4g"/>
+                        <outlet property="infoLbl" destination="6ve-Bg-Ngz" id="aAF-YW-1VU"/>
                         <outlet property="lbl" destination="x8w-35-7Qu" id="qCb-87-bFS"/>
                     </connections>
                 </viewController>

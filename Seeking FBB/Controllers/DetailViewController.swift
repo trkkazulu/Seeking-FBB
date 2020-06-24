@@ -109,6 +109,23 @@ class DetailViewController: UIViewController {
     
     
     @IBAction func voteBtnPressed(_ sender: Any) {
+        
+        let alertController = UIAlertController(
+               title: "Get Access To \(name)'s Contact Info!", message: "Your message", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(
+               title: "Close Alert", style: .default, handler: nil)
+        //you can add custom actions as well
+        alertController.addAction(UIAlertAction(title: "Yes!", style: .default, handler: { (action: UIAlertAction!) in
+        print("Handle Ok logic here")
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "Not Today", style: .default, handler: { (action: UIAlertAction!) in
+        print("Handle Ok logic here")
+        }))
+        
+       //    alertController.addAction(defaultAction)
+
+        present(alertController, animated: true, completion: nil)
     }
     
 }

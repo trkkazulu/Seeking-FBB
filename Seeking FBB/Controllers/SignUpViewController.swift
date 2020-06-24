@@ -72,15 +72,29 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         return button
     }()
     
-    private let alreadyHaveAccountButton: UIButton = {
-        let button = UIButton(type: .system)
-        let attributedTitle = NSMutableAttributedString(string: "Already have an account?  ", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.lightGray])
-        attributedTitle.append(NSAttributedString(string: "Sign In", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.fbbOrange
-        ]))
-        button.setAttributedTitle(attributedTitle, for: .normal)
-        button.addTarget(self, action: #selector(handleAlreadyHaveAccount), for: .touchUpInside)
-        return button
-    }()
+//    private let goBackButton: UIButton = {
+//        //print("Back button pressed")
+//        let button = UIButton(type: .system)
+//        button.setTitle("Go back", for: .normal)
+//        button.backgroundColor = UIColor.rgb(red: 149, green: 204, blue: 248)
+//        button.layer.cornerRadius = 5
+//        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+//        button.setTitleColor(.white, for: .normal)
+//       // button.addTarget(self, action: #selector(buttonTapAction), for: .touchUpInside)
+//         button.addTarget(self, action: #selector(handleGoBackButton), for: .touchUpInside)
+//        button.isEnabled = true
+//        return button
+//    }()
+    
+//    private let alreadyHaveAccountButton: UIButton = {
+//        let button = UIButton(type: .system)
+//        let attributedTitle = NSMutableAttributedString(string: "Already have an account?  ", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+//        attributedTitle.append(NSAttributedString(string: "Sign In", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.fbbOrange
+//        ]))
+//        button.setAttributedTitle(attributedTitle, for: .normal)
+//        button.addTarget(self, action: #selector(handleAlreadyHaveAccount), for: .touchUpInside)
+//        return button
+//    }()
     
     private var profileImage: UIImage?
     
@@ -89,9 +103,12 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         view.backgroundColor = .white
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapOnView)))
         
-        view.addSubview(alreadyHaveAccountButton)
-        alreadyHaveAccountButton.anchor(left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.safeAreaLayoutGuide.rightAnchor, height: 50)
+//        view.addSubview(alreadyHaveAccountButton)
+//        alreadyHaveAccountButton.anchor(left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.safeAreaLayoutGuide.rightAnchor, height: 50)
         
+//        view.addSubview(goBackButton)
+//        goBackButton.anchor(left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.safeAreaLayoutGuide.rightAnchor, height: 50)
+//
         view.addSubview(plusPhotoButton)
         plusPhotoButton.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 40, width: 240, height: 240)
         plusPhotoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -159,8 +176,25 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     @objc private func handleAlreadyHaveAccount() {
-        _ = navigationController?.popViewController(animated: true)
+          print("handle already have account clicked")
+      //  _ = navigationController?.popViewController(animated: true)
+        performSegue(withIdentifier: "welcomeView", sender: nil)
+               let storyboard = UIStoryboard(name: "Main", bundle: nil)
+               let vc = storyboard.instantiateViewController(withIdentifier: "welcomeView")
+               self.navigationController?.pushViewController(vc, animated: true)
+      
     }
+    
+    @objc private func handleGoBackButton() {
+            print("The go back function worked")
+        _ = navigationController?.popViewController(animated: true)
+          performSegue(withIdentifier: "logInView", sender: nil)
+                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                 let vc = storyboard.instantiateViewController(withIdentifier: "logInView")
+                 self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+      }
     
     @objc private func handleSignUp() {
         guard let email = emailTextField.text else { return }
@@ -189,6 +223,9 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
 //            self.dismiss(animated: true, completion: nil)
         }
     }
+
+
+    
 }
 
 
@@ -261,6 +298,11 @@ extension SignUpViewController: UIImagePickerControllerDelegate {
         plusPhotoButton.layer.borderWidth = 0.5
         dismiss(animated: true, completion: nil)
     }
+    
+    @objc private func handleShowLogin() {
+           navigationController?.pushViewController(SignUpController(), animated:  true)
+       }
+       
 }
 
 //MARK: - UITextFieldDelegate

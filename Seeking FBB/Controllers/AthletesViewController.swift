@@ -12,24 +12,20 @@ class AthletesViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
-
-    
-   // let athleteArray: [ActressModel] = load("ActressData.json")
-    
-        let names = ["BrandiMae Akers", "Judy Booty", "Lisa Lips", "Betty Butt", "Lucy Lavender", "Greta Green", "Louise Lazy", "Suzie Samson"]
-    
-    let infoDetail = ["Self Created • Motivated | #entrepreneur | Producer \n • Fitness Model \n • Provocative Entertainer \n • Female Bodybuilder| FBBDATE.com ","Rooty tooty, fine and cuty, lifts weights for her duty", "Someone special this way comes. Be sure to keep her from your chums.", "Daring darling loves to date. Be on time don't make her wait.", "5", "6", "7", "8"]
-    
-     
     
     
+    let names = ["BrandiMae Akers", "Judy Booty", "Lisa Lips", "Betty Butt", "Lucy Lavender", "Greta Green", "Louise Lazy", "Suzie Samson"]
     
-   // let nameInfo = [
-       
-
+    let infoDetail = ["Self Created • Motivated | #entrepreneur | Producer \n • Fitness Model \n • Provocative Entertainer \n • Female Bodybuilder| FBBDATE.com ","Rooty tooty, fine and cutey, lifts big weights for her duty", "Someone special this way comes. Be sure to keep her from your chums.", "Daring darling loves to date. Be on time don't make her wait.", "5", "6", "7", "8"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
+    }
+  
+    @IBAction func backButton(_ sender: Any) {
+        print("It works")
     }
     
 }
@@ -50,7 +46,7 @@ extension AthletesViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.lbl.text = names[indexPath.row]
         cell?.img.image = UIImage(named:names[indexPath.row])
         cell?.img.image = cell?.img.image?.circleMask
-       
+        
         return cell!
     }
     
@@ -60,16 +56,13 @@ extension AthletesViewController: UITableViewDelegate, UITableViewDataSource {
         vc?.image = UIImage(named:names[indexPath.row])!
         vc?.name = names[indexPath.row]
         vc?.infoDetail = infoDetail[indexPath.row]
- 
+        
         self.navigationController?.pushViewController(vc!, animated: true)
-
-       // performSegue(withIdentifier: "DetailView", sender: nil)
-      //  let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
+        
     }
     
-       
-   }
+    
+}
 
 extension UIImage {
     var circleMask: UIImage? {

@@ -98,12 +98,29 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate {
     /*
      // MARK: - Navigation
      
+     
+     
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
      }
      */
+    
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    if segue.identifier == "showList" {
+//      if let indexPath = tableView.indexPathForSelectedRow {
+//        let items = dataManager.items[indexPath.row]
+//
+//        guard let controller = segue.destination as? ListTableViewController else {
+//          return
+//        }
+//        controller.item = items
+//        self.navigationController?.pushViewController(controller, animated: true)
+//      }
+//    }}
+//    
    
     @objc private func buttonTapAction(sender: UIButton!) {
           print("Connection was pressed")

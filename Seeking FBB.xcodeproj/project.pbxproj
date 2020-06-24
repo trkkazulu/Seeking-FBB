@@ -26,7 +26,6 @@
 		13A197A92484387F00E614F4 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A197A82484387F00E614F4 /* Comment.swift */; };
 		13A197B52484A62500E614F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A197B42484A62500E614F4 /* HomeViewController.swift */; };
 		13AC9747249E6F9D00FCED98 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC9746249E6F9D00FCED98 /* DemoData.swift */; };
-		13AC9749249E79E900FCED98 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 13AC9748249E79E900FCED98 /* data.json */; };
 		13B22B2C249D47B900D6AB05 /* AthleteData.json in Resources */ = {isa = PBXBuildFile; fileRef = 13B22B2B249D47B900D6AB05 /* AthleteData.json */; };
 		13B22B2E249D4A2300D6AB05 /* AthleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B22B2D249D4A2300D6AB05 /* AthleteModel.swift */; };
 		13B22B30249D4B8800D6AB05 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B22B2F249D4B8800D6AB05 /* Data.swift */; };
@@ -57,7 +56,6 @@
 		13A197A82484387F00E614F4 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		13A197B42484A62500E614F4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		13AC9746249E6F9D00FCED98 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
-		13AC9748249E79E900FCED98 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		13B22B2B249D47B900D6AB05 /* AthleteData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AthleteData.json; sourceTree = "<group>"; };
 		13B22B2D249D4A2300D6AB05 /* AthleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteModel.swift; sourceTree = "<group>"; };
 		13B22B2F249D4B8800D6AB05 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -151,8 +149,8 @@
 				1316C31824982F1C00599E88 /* Support */,
 				1316C31724982EEF00599E88 /* Storyboards */,
 				13A197A2248431BC00E614F4 /* FirebaseUtilities.swift */,
-				136E835824830B4900EAE41D /* AppDelegate.swift */,
 				136E835A24830B4900EAE41D /* SceneDelegate.swift */,
+				136E835824830B4900EAE41D /* AppDelegate.swift */,
 				136E836124830B5100EAE41D /* Assets.xcassets */,
 				13B22B2F249D4B8800D6AB05 /* Data.swift */,
 			);
@@ -163,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				13B22B2B249D47B900D6AB05 /* AthleteData.json */,
-				13AC9748249E79E900FCED98 /* data.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -248,7 +245,6 @@
 			files = (
 				136E836524830B5100EAE41D /* LaunchScreen.storyboard in Resources */,
 				136E836D248317E000EAE41D /* GoogleService-Info.plist in Resources */,
-				13AC9749249E79E900FCED98 /* data.json in Resources */,
 				136E836224830B5100EAE41D /* Assets.xcassets in Resources */,
 				136E836024830B4900EAE41D /* Main.storyboard in Resources */,
 				13B22B2C249D47B900D6AB05 /* AthleteData.json in Resources */,
@@ -482,7 +478,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C9BBE3E2955F13274F295CE /* Pods-Seeking FBB.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LJ45VYMT6A;
 				INFOPLIST_FILE = "Seeking FBB/Info.plist";
@@ -502,7 +497,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11ED4BEDAC03318CB8C91CC1 /* Pods-Seeking FBB.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LJ45VYMT6A;
 				INFOPLIST_FILE = "Seeking FBB/Info.plist";

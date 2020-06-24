@@ -65,7 +65,7 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
     
     private let dummyButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Back Button", for: .normal)
+        button.setTitle("Don't have an account? Sign up", for: .normal)
         button.backgroundColor = UIColor.fbbOrange
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize:14)

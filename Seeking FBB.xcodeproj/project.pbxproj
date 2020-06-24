@@ -478,7 +478,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C9BBE3E2955F13274F295CE /* Pods-Seeking FBB.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = LJ45VYMT6A;
 				INFOPLIST_FILE = "Seeking FBB/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -486,7 +488,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glathocom.Seeking-FBB";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glathocom.seekingfbb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,7 +499,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11ED4BEDAC03318CB8C91CC1 /* Pods-Seeking FBB.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = LJ45VYMT6A;
 				INFOPLIST_FILE = "Seeking FBB/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -505,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glathocom.Seeking-FBB";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glathocom.seekingfbb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

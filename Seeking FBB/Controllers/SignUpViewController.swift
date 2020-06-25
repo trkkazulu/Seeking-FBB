@@ -28,6 +28,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         tf.keyboardType = .emailAddress
         tf.placeholder = "Email"
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
+          tf.textColor = .black
         tf.borderStyle = .roundedRect
         tf.font = UIFont.systemFont(ofSize: 14)
         tf.delegate = self
@@ -41,6 +42,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         tf.autocorrectionType = .no
         tf.autocapitalizationType = .none
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
+          tf.textColor = .black
         tf.borderStyle = .roundedRect
         tf.font = UIFont.systemFont(ofSize: 14)
         tf.delegate = self
@@ -53,6 +55,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate {
         tf.placeholder = "Password"
         tf.isSecureTextEntry = true
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
+          tf.textColor = .black
         tf.borderStyle = .roundedRect
         tf.font = UIFont.systemFont(ofSize: 14)
         tf.delegate = self

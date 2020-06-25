@@ -32,6 +32,7 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
         tf.keyboardType = .emailAddress
         tf.placeholder = "Email"
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
+        tf.textColor = .black
         tf.borderStyle = .roundedRect
         tf.font = UIFont.systemFont(ofSize: 14)
         tf.delegate = self
@@ -46,6 +47,7 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
         tf.borderStyle = .roundedRect
         tf.font = UIFont.systemFont(ofSize: 14)
+          tf.textColor = .black
         tf.delegate = self
         tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
         return tf
@@ -112,6 +114,7 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
     
     
     // MARK -
+  
     
     private func setupInputFields() {
         let stackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, loginButton])

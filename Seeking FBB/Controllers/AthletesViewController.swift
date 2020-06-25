@@ -23,7 +23,7 @@ class AthletesViewController: UIViewController {
         super.viewDidLoad()
         
     }
-  
+    
     @IBAction func backButton(_ sender: Any) {
         print("It works")
     }

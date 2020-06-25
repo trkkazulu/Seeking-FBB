@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class HomeViewController: UIViewController, UINavigationControllerDelegate {
     
@@ -93,7 +95,14 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate {
                stackView.anchor(top: fbbInfoContainerView.bottomAnchor, left: view.safeAreaLayoutGuide.leftAnchor, right: view.safeAreaLayoutGuide.rightAnchor, paddingTop: 20, paddingLeft: 40, paddingRight: 40, height: 200)
         
             }
-    
+    private func logOutUser() {
+        do {
+            try Auth.auth().signOut()
+        } catch let error {
+            print("Error: ", error.localizedDescription)
+        }
+        
+    }
     
     /*
      // MARK: - Navigation
@@ -130,6 +139,16 @@ class HomeViewController: UIViewController, UINavigationControllerDelegate {
           self.navigationController?.pushViewController(vc, animated: true)
       }
     
+    @IBAction func logOutBtnPressed(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            print("User logged out")
+        } catch let error {
+            print("Error: ", error.localizedDescription)
+        }
+        performSegue(withIdentifier: "welcomeView", sender: nil)
+              // let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    }
     @IBAction func conversationBtnPressed(_ sender: Any) {
         conversationBtn.addTarget(self, action: #selector((buttonTapAction)), for: UIControl.Event.touchUpInside)
 
